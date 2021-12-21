@@ -1,0 +1,17 @@
+#include<iostream>
+class myclass {
+public:
+	void foo();
+private:
+};
+void myclass::foo()
+{
+	std::cout << "foo cagrildi\n";
+	std::cout << "this :" << this << '\n';
+}
+int main()
+{
+	myclass emin;
+	std::cout << "&emin = " << &emin << "\n";
+	emin.foo();
+}
